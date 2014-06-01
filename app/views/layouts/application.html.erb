@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+<%= link_to "Home", root_path %>
+<%= link_to "About", about_path %>
+ <div class="container">
+<%= yield %>
+</div>
+<%= render 'layouts/header' %>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
